@@ -7,7 +7,7 @@ game 실행은 Mame Emulator로 strikers 1945 Rom으로 실행한다.
 
 ## 1. 데이터 얻기
 학습을 위해서는 data가 필요하다. 하지만 실행하는 game의 정보를 어떻게 얻을 것인가?
-Open AI에서는 Gym을 통해 다양한 ATARI Game을 환경으로 제공한다. 분명 이것을 사용하면 쉽게 예제를 만들 수 있겠으나 내가 원하는 game을 할 순 없다.
+Open AI에서는 Gym을 통해 다양한 ATARI Game을 환경으로 제공한다. 분명 이것을 사용하면 쉽게 만들 수 있겠으나 내가 원하는 game을 할 순 없다.
 그래서 생각한 것이 직접 화면을 capture하여 data를 얻는 것이다. 앞으로 강화학습 코드 또한 python을 사용할 것이므로 python을 사용하여 내 computer의 화면을 capture하는 방법을 찾아보았다. 
 OpenCV를 사용하여 해결할 수 있었다. PIL(pillow)의 ImageGrab을 이용하여 computer의 특정 영역을 Capture한다. 이 때 매개변수로 Capture 시작점 x좌표,y좌표, Capture할 영역의 길이, Capture할 길이의 높이를 넣어준다. 자동적으로 학습 과정 중 game은 창모드로 화면에 정해진 구역에 있어야 하게 된다. 화면에서 왼쪽 최상단 모서리의 좌표가 (0,0)이고 오른쪽으로 갈수록 x좌표가 커지고 아래로 갈수록 y좌표가 커지게 된다.
 

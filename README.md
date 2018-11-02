@@ -29,7 +29,7 @@ PIL의 ImageGrab을 사용하여 위와 같이 실시간으로 Capture할 수 �
 * image 좌상단에 고정되어 있는 reward 얻어오기(image 짤라서 숫자로 변환 어떻게?)
 * Game이 끝나는 것 감지하고 다시 시작하기
 * game 입력하는 방법
-* Model 
+* Model 설계하기
 
 참고자료
 1. 논문: Playing Atari with Deep Reinforcement Learning : https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf

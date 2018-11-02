@@ -5,6 +5,11 @@ Learn how to get the maximum score for a game using RL
 Project에 사용될 game은 'strikers 1945' shooting game으로 내가 잘 못 하는 shooting game을 인공지능이 학습하여 더 잘하는 모습을 보고 싶기 때문이다.
 game 실행은 Mame Emulator로 strikers 1945 Rom으로 실행한다.
 
+## 0. 환경
+* Game 실행 후 기체 선택까지는 내가 해주기(굳이 이 부분까지 학습할 필요는 없다.)
+* 학습을 위해 기체는 하나로 통일하기 
+* General한 환경을 위해 죽어도 continue
+
 ## 1. 데이터 얻기
 학습을 위해서는 data가 필요하다. 하지만 실행하는 game의 정보를 어떻게 얻을 것인가?
 Open AI에서는 Gym을 통해 다양한 ATARI Game을 환경으로 제공한다. 분명 이것을 사용하면 쉽게 만들 수 있겠으나 내가 원하는 game을 할 순 없다.
@@ -18,7 +23,7 @@ PIL의 ImageGrab을 사용하여 위와 같이 실시간으로 Capture할 수 �
 
 ## 다음에 할 일
 * image 좌상단에 고정되어 있는 reward 얻어오기(image 짤라서 숫자로 변환)
-* Game 특성상 동전을 미리 9개 밖에 못 넣는다. 한 번 학습시마다 맨 처음 동전 넣어주기 
+* Game 특성상 동전을 미리 9개 밖에 못 넣는다. 한 번 학습시마다 맨 처음에 동전 넣어주기 
 
 참고자료
 1. 논문: Playing Atari with Deep Reinforcement Learning : https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf

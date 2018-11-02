@@ -11,6 +11,10 @@ Open AI에서는 Gym을 통해 다양한 ATARI Game을 환경으로 제공한다
 그래서 생각한 것이 직접 화면을 capture하여 data를 얻는 것이다. 앞으로 강화학습 코드 또한 python을 사용할 것이므로 python을 사용하여 내 computer의 화면을 capture하는 방법을 찾아보았다. 
 OpenCV를 사용하여 해결할 수 있었다. PIL(pillow)의 ImageGrab을 이용하여 computer의 특정 영역을 Capture한다. 이 때 매개변수로 Capture 시작점 x좌표,y좌표, Capture할 영역의 길이, Capture할 길이의 높이를 넣어준다. 자동적으로 학습 과정 중 game은 창모드로 화면에 정해진 구역에 있어야 하게 된다. 화면에서 왼쪽 최상단 모서리의 좌표가 (0,0)이고 오른쪽으로 갈수록 x좌표가 커지고 아래로 갈수록 y좌표가 커지게 된다.
 
+openCV란 Computer Vision library의 약자로 이미지 검수를 기계적으로 처리하도록 도와주는 이미지 처리 라이브러리
+
+![Get_Data](./image/Get_Data.png)
+PIL의 ImageGrab을 사용하여 위와 같이 실시간으로 Capture할 수 있게 되었다. time을 이용하여 한 장당 걸리는 시간을 측정하니 대략 0.12초가 걸린 것을 알 수 있고 실제로 보면 조금 delay가 있는 것도 확인할 수 있었다. 이 delay 때문에 화면을 약간씩 건너뛰게 되는 효과가 나타나지만 0.12초에 화면에 그렇게 큰 변화가 일어나지 않아 영향은 적을 것이라 생각된다.
 
 참고자료
 1. 논문: Playing Atari with Deep Reinforcement Learning : https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf

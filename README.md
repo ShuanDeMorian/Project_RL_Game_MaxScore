@@ -6,7 +6,7 @@ Project에 사용될 game은 'strikers 1945' shooting game으로 내가 잘 못 
 game 실행은 Mame Emulator로 strikers 1945 Rom으로 실행한다.
 
 ## 0. 환경
-* ~~Game 실행 후 기체 선택까지는 내가 해주기(굳이 이 부분까지 학습할 필요는 없다.)~~ 내 개입 없이 자동으로 학습할 수 있도록 game이 끝나면 혼자 다시 시작하도록 한다. (학습은 아니고 game 종료가 되었을 때 행동할 command를 미리 내가 입력해두고 실행하게 한다)  
+* ~~Game 실행 후 기체 선택까지는 내가 해주기(굳이 이 부분까지 학습할 필요는 없다.)~~ 내 개입 없이 자동으로 학습할 수 있도록 game이 끝나면 혼자 다시 시작하도록 한다. ~~(학습은 아니고 game 종료가 되었을 때 count down이 된다. 이를 빨리 넘기고 기체 선택까지 행동할 command를 미리 내가 입력해두고 실행하게 한다)~~ Emulator에 game soft reset을 사용하여 infinite coin cheat는 유지하며 game 초기화면으로 돌아간다. 그 후 정해진 command를 입력하여 기체 선택까지 하도록 한다.  
 * 학습을 위해 기체는 Bf-109 하나로 통일하기(선택이유: 유도 미사일이 있어 더 쉽게 game을 진행할 수 있을 것 같아서) 
 * 죽어도 계속 continue 해버리면 이전 판의 reward에 누적되므로 바로 죽어도 높은 reward를 얻게 된다. 다시 처음부터 시작하자
 * 강화학습의 특성상 reward 받는 term이 짧을수록 좋은데 다행히 이 game은 실시간으로 reward를 얻을 수 있다. 

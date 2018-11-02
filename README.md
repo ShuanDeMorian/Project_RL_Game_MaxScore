@@ -10,7 +10,9 @@ game 실행은 Mame Emulator로 strikers 1945 Rom으로 실행한다.
 * 학습을 위해 기체는 Bf-109 하나로 통일하기(선택이유: 유도 미사일이 있어 더 쉽게 game을 진행할 수 있을 것 같아서) 
 * 죽어도 계속 continue 해버리면 이전 판의 reward에 누적되므로 바로 죽어도 높은 reward를 얻게 된다. 다시 처음부터 시작하자
 * 강화학습의 특성상 reward 받는 term이 짧을수록 좋은데 다행히 이 game은 실시간으로 reward를 얻을 수 있다. 
-*
+* 원래 game에서는 목숨이 3개가 있지만 학습을 편하게 하기 위해 목숨을 1로 바꿔준다
+* cheat 중에 무한 credit을 적용(동전 넣는 command가 필요 없다)
+* game 특성 상 stage가 정해져 있지 않고 시작할 때마다 random하게 바뀐다. general하게 학습하기 좋다. 
 
 ## 1. 데이터 얻기
 학습을 위해서는 data가 필요하다. 하지만 실행하는 game의 정보를 어떻게 얻을 것인가?
@@ -25,7 +27,7 @@ PIL의 ImageGrab을 사용하여 위와 같이 실시간으로 Capture할 수 �
 
 ## 다음에 할 일
 * image 좌상단에 고정되어 있는 reward 얻어오기(image 짤라서 숫자로 변환)
-* Game 특성상 동전을 미리 9개 밖에 못 넣는다. 한 번 학습시마다 맨 처음에 동전 넣어주기 
+* Game이 끝나는 것 감지하고 다시 시작하기
 
 참고자료
 1. 논문: Playing Atari with Deep Reinforcement Learning : https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf

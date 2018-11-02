@@ -8,7 +8,8 @@ game 실행은 Mame Emulator로 strikers 1945 Rom으로 실행한다.
 ## 0. 환경
 * Game 실행 후 기체 선택까지는 내가 해주기(굳이 이 부분까지 학습할 필요는 없다.)
 * 학습을 위해 기체는 하나로 통일하기 
-* General한 환경을 위해 죽어도 continue
+* 죽어도 계속 continue 해버리면 이전 판의 reward에 누적되므로 바로 죽어도 높은 reward를 얻게 된다. 다시 처음부터 시작하자
+* 강화학습의 특성상 reward 받는 term이 짧을수록 좋은데 다행히 이 game은 실시간으로 reward를 얻을 수 있다. 
 
 ## 1. 데이터 얻기
 학습을 위해서는 data가 필요하다. 하지만 실행하는 game의 정보를 어떻게 얻을 것인가?

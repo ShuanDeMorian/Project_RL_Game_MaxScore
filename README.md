@@ -11,8 +11,8 @@ game 실행은 Mame Emulator로 strikers 1945 Rom으로 실행한다.
 * 죽어도 계속 continue 해버리면 이전 판의 reward에 누적되므로 바로 죽어도 높은 reward를 얻게 된다. 다시 처음부터 시작하자
 * 강화학습의 특성상 reward 받는 term이 짧을수록 좋은데 다행히 이 game은 실시간으로 reward를 얻을 수 있다. 
 * 원래 game에서는 목숨이 3개가 있지만 학습을 편하게 하기 위해 목숨을 1로 바꿔준다
-* cheat 중에 무한 credit을 적용(동전 넣는 command가 필요 없다)
-* game 특성 상 stage가 정해져 있지 않고 시작할 때마다 random하게 바뀐다. general하게 학습하기 좋다. 
+* ~~cheat 중에 무한 credit을 적용(동전 넣는 command가 필요 없다)~~ 상태 load로 필요 없다.
+* ~~game 특성 상 stage가 정해져 있지 않고 시작할 때마다 random하게 바뀐다. general하게 학습하기 좋다. ~~ 상태 load로 항상 초기 상태 일정하게 유지된다.
 
 ## 1. 데이터 얻기
 학습을 위해서는 data가 필요하다. 하지만 실행하는 game의 정보를 어떻게 얻을 것인가?

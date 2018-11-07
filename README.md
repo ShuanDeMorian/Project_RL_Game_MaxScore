@@ -38,6 +38,7 @@ PIL의 ImageGrab을 사용하여 위와 같이 실시간으로 Capture할 수 �
   -가능한 방법
   * 해상도 작게(탄환의 크기가 작은데 해상도를 더 작게 해버리면 문제는 없는가?)
   * gray scale(탄환 별로 색상이 다를텐데 그것에 대한 문제는 없는가?)
+* 분명히 학습하는 데 오래 걸릴 것이다. weight 등 기존 학습 결과를 저장하고 불러와서 이어 학습할 수 있도록 
 
 참고자료
 1. 논문 : Playing Atari with Deep Reinforcement Learning : https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf

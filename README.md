@@ -35,7 +35,7 @@ PIL의 ImageGrab을 사용하여 위와 같이 실시간으로 Capture할 수 �
 * Model 설계하기
 
 참고자료
-1. 논문: Playing Atari with Deep Reinforcement Learning : https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf
+1. 논문 : Playing Atari with Deep Reinforcement Learning : https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf
 2. 딥러닝과 강화 학습으로 나보다 잘하는 쿠키런 AI 구현하기 : https://www.slideshare.net/deview/ai-67608549
 3. LG CNS 블로그- 보상을 통해 학습하는 머신러닝 기술 1편 : https://blog.lgcns.com/1692
 4. LG CNS 블로그- 보상을 통해 학습하는 머신러닝 기술 2편 : https://blog.lgcns.com/1697?category=515093
@@ -43,3 +43,4 @@ PIL의 ImageGrab을 사용하여 위와 같이 실시간으로 Capture할 수 �
 6. open AI Gym : https://gym.openai.com/
 7. Python GTA5 자동주행 : http://jhlblue.tistory.com/10
 8. Reading game frames in Python with OpenCV - Python Plays GTA V :https://pythonprogramming.net/game-frames-open-cv-python-plays-gta-v/
+9. 논문 : Human-level control through deep reinforcement learning(딥마인드 아타리 게임 후속 논문) : https://www.nature.com/articles/nature14236

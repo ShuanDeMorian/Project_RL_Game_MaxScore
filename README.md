@@ -34,6 +34,7 @@ PIL의 ImageGrab을 사용하여 위와 같이 실시간으로 Capture할 수 �
 * game 입력하는 방법
 * Model 설계하기
 * 행동 정책을 어떻게 할까?, 계속 미사일을 쏘는 것이 유리하지만 인간의 개입이다. 어떻게 피하거나 언제 폭탄을 쓸지 학습하는 것만으로 충분하지 않을까?
+* image를 그대로 input으로 넣기엔 너무 크다. 내 GPU로는 연산이 불가능할 것이다(0.12초 안에 결정을 내릴 수 없을 것이다), 미리 학습된 CNN으로 처리하여 작게 만들 수도 있겠지만, 어떻게 CNN을 학습시켜 놓을 것인가?
 
 참고자료
 1. 논문 : Playing Atari with Deep Reinforcement Learning : https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf

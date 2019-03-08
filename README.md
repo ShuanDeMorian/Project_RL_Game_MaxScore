@@ -51,3 +51,4 @@ PIL의 ImageGrab을 사용하여 위와 같이 실시간으로 Capture할 수 �
 8. Reading game frames in Python with OpenCV - Python Plays GTA V :https://pythonprogramming.net/game-frames-open-cv-python-plays-gta-v/
 9. 논문 : Human-level control through deep reinforcement learning(딥마인드 아타리 게임 후속 논문) : https://www.nature.com/articles/nature14236
 10. 딥 강화학습 쉽게 이해하기 http://ddanggle.github.io/demystifyingDL
+11. AI korea에서 구현한 스트라이커2 https://github.com/aikorea/strikersii_ai

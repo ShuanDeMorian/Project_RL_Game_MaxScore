@@ -1,5 +1,6 @@
 from MAMEToolkit.emulator import Emulator
 from MAMEToolkit.emulator import Address
+from MAMEToolkit.emulator import Action
 
 roms_path = "roms/s1945ii"  # Replace this with the path to your ROMs
 game_id = "s1945ii"
@@ -12,6 +13,16 @@ memory_addresses = {
     
 emulator = Emulator("env1", roms_path, "s1945ii", memory_addresses)
 
+insert_coin = Action(':INPUTS','Coin 1')
+button1 = Action(':INPUTS','P1 Button 1')
+data = emulator.step([insert_coin])
+
 while True:
-	data = emulator.step([])
-	print(data)
+	data = emulator.step([button1])
+	deadP1 = data['deadP1']
+    scoreP1 = data['scoreP1']
+    bombsP1 = data['bombsP1']
+    livesP1 = data['livesP1']
+    print("deadP1 :",deadP1," scoreP1 :",scoreP1," bombsP1 :",bombsP1," livesP1 :",livesP1)
+
+	

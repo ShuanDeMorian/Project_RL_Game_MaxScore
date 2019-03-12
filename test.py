@@ -11,3 +11,7 @@ memory_addresses = {
     }
     
 emulator = Emulator("env1", roms_path, "s1945ii", memory_addresses)
+
+while True:
+	data = emulator.step([])
+	print(data)

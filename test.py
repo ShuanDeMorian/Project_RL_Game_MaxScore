@@ -19,10 +19,10 @@ data = emulator.step([insert_coin])
 
 while True:
 	data = emulator.step([button1])
-	deadP1 = data['deadP1']
-    scoreP1 = data['scoreP1']
-    bombsP1 = data['bombsP1']
-    livesP1 = data['livesP1']
-    print("deadP1 :",deadP1," scoreP1 :",scoreP1," bombsP1 :",bombsP1," livesP1 :",livesP1)
+	#deadP1  = data['deadP1']
+    #scoreP1 = data['scoreP1']
+    #bombsP1 = data['bombsP1']
+    #livesP1 = data['livesP1']
+    #print("deadP1 :",deadP1," scoreP1 :",scoreP1," bombsP1 :",bombsP1," livesP1 :",livesP1)
 
 	

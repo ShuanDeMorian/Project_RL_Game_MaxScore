@@ -14,8 +14,10 @@ memory_addresses = {
 emulator = Emulator("env1", roms_path, "s1945ii", memory_addresses)
 
 insert_coin = Action(':INPUTS','Coin 1')
+P1_START =  Action(':INPUTS', '1 Player Start')
 button1 = Action(':INPUTS','P1 Button 1')
 data = emulator.step([insert_coin])
+data = emulator.step([P1_START])
 
 while True:
 	data = emulator.step([button1])
